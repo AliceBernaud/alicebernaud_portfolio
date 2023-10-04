@@ -1,0 +1,25 @@
+#skillsCarousel {
+
+  .carousel-item {
+    height: 520px;
+    padding: 8px;
+  }
+
+  p {
+    padding: 8px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  #skillsCarousel {
+    .carousel-item {
+      height: 480px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+  }
+}
