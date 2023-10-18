@@ -12,6 +12,12 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.conteneur-2 {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 2%;
+}
+
 .grid {
   height: auto;
 }
@@ -56,4 +62,37 @@
   font-size: 15px;
   color: #3C78D8;
   text-align: justify;
+}
+
+.grille-jaune{
+  background-color: #F5EE9E;
+  margin: 1em;
+}
+
+.grille-jaune h3{
+  color: #3C78D8;
+  text-align: center;
+}
+
+.grille-bleue{
+  background-color:#BDD4E7;
+  margin: 1em;
+}
+
+.grille-bleue h3{
+  color: #3C78D8;
+  text-align: center;
+}
+.realisations{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.realisations img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
 }
