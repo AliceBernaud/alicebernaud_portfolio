@@ -1,65 +1,113 @@
-<main>
-<div>
-  <h1> Alice Bernaud <h1>
+<div class="mySidenav" data-controller="sidenav" >
+  <div></div>
 
-  <h3>Ma passion pour la technologie et ma forte expérience dans la gestion de projet m'ont amenée à suivre une formation en développement web, élargissant ainsi mes compétences techniques afin de prétendre aujourd'hui à un poste de Product Owner ou Product Manager </h3>
+  <div class="titre">
+    <h1>Alice Bernaud </h1>
+  </div>
+  <div  data-controller="navbar"  data-navbar-target="openBtn">
+    <button class="menu" data-action="click->navbar#openNav" >
+      <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+  <div class="sidenav" data-controller="navbar"  data-navbar-target="closeBtn">
+    <button id="closeBtn" class="close" data-action="click->navbar#closeNav">×</button>
+    <ul>
+      <li><a href="#">Mes compétences</a></li>
+      <li><a href="#">Mes réalisations</a></li>
+      <li><a href="#">Mes expériences professionnelles</a></li>
+      <li><a href="#">Ma formation</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+
+</div>
+<div class="presentation">
+  <div class="image">
+    <%= image_tag("photo_alice.jpeg", alt:"photo de profil") %>
+  </div>
+  <div class="description">
+    <p>Ma passion pour la technologie et ma forte expérience dans la gestion de projet m'ont amenée à suivre une formation en développement web, élargissant ainsi mes compétences techniques afin de prétendre aujourd'hui à un poste de Product Owner ou Product Manager </p>
+  </div>
+</div>
 
  <div class="infos-card">
     <div>
-      <h2>Mes compétences</h2>
+      <h1>Mes compétences</h1>
     </div>
-    <div id="skillsCarousel">
-      <p>Compétences techniques</p>
+    <div class="conteneur">
+      <div class="grid infos-card" id="skillsCarousel">
+        <h2>Compétences techniques</h2>
+          <div >
+            <h3>Ruby</h3>
+            <div class="logo">
+            <%= image_tag("Ruby_logo.svg.png", alt:"logo-ruby")%>
+            </div>
+            <p>J'ai commencé le code par Ruby et je vous cache pas qu'au début je ne comprenais rien </p>
+          </div>
 
+          <div>
+            <h3>Ruby on Rails</h3>
+            <div class="logo">
+            <%= image_tag("logo-rails.png", alt:"logo-ruby")%>
+            </div>
+          </div>
 
-        <div >
-          <h2>Ruby</h2>
-          <p>J'ai commencé le code par Ruby et je vous cache pas qu'au début je ne comprenais rien </p>
-        </div>
+          <div>
+            <h3>Javascript</h3>
+            <div class="logo">
+            <%= image_tag("logo-js.svg.png", alt:"logo-ruby")%>
+            </div>
+          </div>
 
+          <div>
+            <h3>SQL</h3>
+            <div class="logo">
+            <%= image_tag("sql-logo.png", alt:"logo-ruby")%>
+            </div>
+          </div>
+      </div>
 
-      <section>
-        <div>
-          <h2>Ruby on Rails</h2>
-        </div>
-      </section>
+    <div class="grid infos-card">
+      <h2>Compétences Gestions de projets</h2>
+    </div>
 
-      <section>
-        <div>
-          <h2>Javascript</h2>
-        </div>
-      </section>
+     <div class="grid infos-card">
+      <h2>Compétences redation d'articles & SEO </h2>
+    </div>
 
-      <section>
-        <div>
-          <h2>SQL</h2>
-        </div>
-      </section>
     </div>
   </div>
 
   <div class="infos-card">
   <div>
-    <h2>Mes expériences professionnelles</h2>
+    <h1>Mes expériences professionnelles</h1>
   </div>
   <div>
-    <p>Chef de projet chez DataOnDemand</p>
+    <h2>Chef de projet chez DataOnDemand</h2>
   </div>
   </div>
 
   <div class="infos-card">
-    <h2>Mes formations</h2>
+    <h1>Mes formations</h1>
   </div>
 
   <div class="infos-card">
-    <h2>Mes réalisations </h2>
+    <h1>Mes réalisations </h1>
+    <div>
+    <h2>interview des sisters et redaction d'article de blog</h2>
+    </div>
   </div>
 
   <div class="infos-card">
-    <h2>Contact </h2>
+    <h1>Contact </h1>
     <%= image_tag "linkedin.png"%>
     <%= link_to "https://www.linkedin.com/in/alice-bernaud-30aaa488/" %>
     <%= link_to "Envoyer un email" %>
   </div>
 </div>
-</main>
+</div>
