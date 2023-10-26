@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.grille-jaune{
+  background-color: #F5EE9E;
+  margin: 2%;
+
+  h3{
+    color: #3C78D8;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: center;
+  }
+}
+
+.grille-bleue{
+  background-color:#BDD4E7;
+  margin: 2%;
+
+  h3{
+  color: #3C78D8;
+  text-align: center;
+  }
+
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: center;
+  }
+}
+.realisations{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 1%;
+}

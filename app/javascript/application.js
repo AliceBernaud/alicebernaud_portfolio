@@ -3,7 +3,6 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "@popperjs/core"
 import "bootstrap"
-import 'swiper/swiper-bundle.min.css'
 
 
 //= require bootstrap

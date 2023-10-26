@@ -1,58 +1,43 @@
-.infos-card {
-  box-shadow: 0px 0px 8px 0px #d3d3d3;
-}
-
-.infos-card h1 {
+h1 {
   color:#F5EE9E;
   text-align: center;
-}
 
-.conteneur {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.conteneur-2 {
-  display:grid;
-  grid-template-columns: 2fr 1fr;
-  margin-top: 2%;
-}
-
-.grid {
-  height: auto;
 }
 
 .presentation {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+  margin: 2%;
 }
 
 .image {
-  flex: 50%;
+  grid: 50%;
   justify-items: center;
 
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    justify-content: center;
+  }
 }
 
-.image img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  justify-content: center;
-}
+
+
 
 .logo {
   flex:50%;
 
-}
+  img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    justify-content: center;
 
-.logo img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  justify-content: center;
-
+  }
 }
 
 .description {
@@ -64,35 +49,30 @@
   text-align: justify;
 }
 
-.grille-jaune{
-  background-color: #F5EE9E;
-  margin: 1em;
+.contenaire-2 {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 2%;
 }
 
-.grille-jaune h3{
-  color: #3C78D8;
-  text-align: center;
+@media(min-width: 768px) and (max-width: 1388px) {
+  // Ajoutez ici les styles spécifiques à cette résolution d'écran si nécessaire
 }
 
-.grille-bleue{
-  background-color:#BDD4E7;
-  margin: 1em;
-}
+@media(max-width: 767px) {
+  .presentation{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 1%;
+  }
 
-.grille-bleue h3{
-  color: #3C78D8;
-  text-align: center;
-}
-.realisations{
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
+  .image{
+    margin-bottom: 2%;
+  }
 
+  .competences{
 
-.realisations img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+  }
 }

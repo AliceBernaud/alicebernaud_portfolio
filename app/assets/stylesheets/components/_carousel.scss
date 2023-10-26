@@ -1,40 +1,38 @@
-// #skillsCarousel {
+#skillsCarousel {
+  .carousel-inner:hover {
+    img {
+      animation: rotate 1s ease-in-out infinite;
+      width: 150px;
+      height: 150px;
+    }
+  }
 
-//   .carousel-item {
-//     height: 520px;
-//     padding: 8px;
-//   }
+  .carousel-item {
+    height: 520px;
+    padding: 8px;
+    transition: none;
+  }
 
-//   p {
-//     padding: 8px;
-//   }
+  p {
+    padding: 8px;
+  }
 
-// }
+  img{
+    width: 150px;
+    height: 150px;
+  }
 
-// @media screen and (max-width: 992px) {
-//   #skillsCarousel {
-//     .carousel-item {
-//       height: 480px;
-//     }
-
-//     p {
-//       font-size: 12px;
-//     }
-
-//   }
-// }
-
-.card-indicator {
-  width: 10px !important;
-  height: 10px !important;
-  pointer-events: none;
 }
 
-.custom{
-  max-width: 400px;
-  max-height: 400px;
-}
+@media screen and (max-width: 992px) {
+  #skillsCarousel {
+    .carousel-item {
+      height: 480px;
+    }
 
-.custom-annexe {
-  height: 300px;
+    p {
+      font-size: 12px;
+    }
+
+  }
 }
