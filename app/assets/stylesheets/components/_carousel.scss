@@ -1,26 +1,44 @@
-#skillsCarousel {
+#skillCarousel {
+  height: 600px;
   .carousel-inner:hover {
     img {
-      animation: rotate 1s ease-in-out infinite;
-      width: 150px;
-      height: 150px;
+      // animation: rotate 1s ease-in-out infinite;
+      width: 100px;
+      height: 100px;
     }
   }
+}
 
   .carousel-item {
-    height: 520px;
+    position: relative;
     padding: 8px;
     transition: none;
-  }
+
 
   p {
     padding: 8px;
   }
 
   img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
+
+}
+.carousel-item :active{
+  height: 150px;
+  padding: 8px;
+  transition: none;
+
+
+p {
+  padding: 8px;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+}
 
 }
 

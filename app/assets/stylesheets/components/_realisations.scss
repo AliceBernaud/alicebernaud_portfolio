@@ -3,6 +3,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-content: center;
+  margin: 2%;
+  padding: 2%;
+  row-gap: 5%;
 }
 
 .grille-jaune{
@@ -16,7 +19,7 @@
 
   img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
     justify-content: center;
   }
@@ -33,11 +36,12 @@
 
   img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   justify-content: center;
   }
 }
+
 .realisations{
   display: grid;
   grid-template-columns: 1fr 1fr;
